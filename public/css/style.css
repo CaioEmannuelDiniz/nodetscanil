@@ -1,4 +1,4 @@
-:root{
+:root {
     --pagebg: #FFF;
     --main: #102581;
     --bglink: rgba(0, 0, 0, 0.3);
@@ -7,70 +7,68 @@
     --lighter: #444;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--pagebg);
 }
-.container{
+.container {
     max-width: 1100px;
-    padding:  0 20px;
-    margin:  auto;
+    padding: 0 20px;
+    margin: auto;
 }
-header{
+header {
     font-size: 28px;
     padding: 10px 0;
 }
-header .container{
+header .container {
     display: flex;
     justify-content: space-between;
 }
 header a {
     text-decoration: none;
-    color:  var(--main);
+    color: var(--main);
 }
-header input{
+header input {
     padding: 5px 10px;
     font-size: 14px;
     width: 100%;
-    max-width:  200px;
+    max-width: 200px;
 }
-nav{
+nav {
     background: var(--main);
-    color: var(var(--darkbg));
+    color: var(--darkbg);
     padding: 15px 0;
-
 }
-ul{
+ul {
     list-style: none;
     max-width: 1100px;
     margin: auto;
     display: flex;
     justify-content: space-around;
 }
-
 ul li a {
     color: var(--darkbg);
     text-decoration: none;
-    padding:  5px 15px;
+    padding: 5px 15px;
     border-radius: 10px;
 }
-
 ul li.active a,
-ul li:hover a{
+ul li:hover a {
     background: var(--bglink);
 }
 
-.banner{
+.banner {
     height: 300px;
     background: var(--lighter);
     background-size: cover;
     background-position: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--darkbg);
     font-size: 36px;
     font-weight: bold;
@@ -78,43 +76,38 @@ ul li:hover a{
     margin-bottom: 30px;
 }
 
-h2{
+h2 {
     color: var(--main);
     font-size: 24px;
     font-weight: bold;
-    text-align:  center;
+    text-align: center;
 }
 
-.no-list{
+.no-list {
     margin-bottom: 50px;
 }
-
-.list{
+.list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     margin: 30px auto;
 }
-
-.item{
+.item {
     color: var(--lightbg);
 }
-
-.item--image{
+.item--image {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
-
-.item--name{
+.item--name {
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 5px;
 }
-
 .item--type,
 .item--color,
-.item--genre{
+.item--genre {
     font-size: 13px;
     color: var(--lighter);
     margin-bottom: 3px;
