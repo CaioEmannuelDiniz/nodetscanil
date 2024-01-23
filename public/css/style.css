@@ -94,11 +94,15 @@ h2 {
 }
 .item {
     color: var(--lightbg);
+    overflow: hidden;
 }
 .item--image {
     width: 100%;
     height: auto;
     border-radius: 5px;
+}
+.item--image:hover{
+    scale: 120%;
 }
 .item--name {
     font-size: 15px;
